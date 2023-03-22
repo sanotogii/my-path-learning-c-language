@@ -7,6 +7,6 @@ int main() {
 	printf("entre the value of R:");
 	scanf("%f", &rayon);
 	surface = rayon*rayon*pi;
-	printf("lair de cyrcle et :%.2f ",surface);
+	printf("lair de cyrcle et :%.2f\n ",surface);
 	return 0;
 }
