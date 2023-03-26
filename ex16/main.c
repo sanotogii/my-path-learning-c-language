@@ -13,9 +13,12 @@ int main(void)
 
     for(i = 1;i <= l; i++)
     {
-        for(j = 1;j <= i; j++)
+        for(j = 1;j <= c; j++)
         {
-            printf("* ");
+            if (i == 1 || j == 1 || i == l || j == c)
+                printf("* ");
+            else
+                printf("  ");
         }
         printf("\n");
     }

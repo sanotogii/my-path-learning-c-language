@@ -2,20 +2,21 @@
 #include <stdlib.h>
 int main(void)
 {
-    int i , l , c , j ;
-    
+    int i, l, c, j;
+
     do {
     printf("enter the number of lines : ");
     scanf("%d",&l);
-    printf("enter the number of columes : ");
-    scanf("%d",&c);
-    }while(l < 0 && c < 0);
-
+    }while(l < 0);
+    c = l;
     for(i = 1;i <= l; i++)
     {
-        for(j = 1;j <= i; j++)
+        for(j = 1;j <= c; j++)
         {
-            printf("* ");
+            for(j = 1;j <= l-i;j++)
+                printf("  ");
+            for(j = 1;j <= l ; j++)
+                printf("* ");
         }
         printf("\n");
     }
